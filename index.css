@@ -1,0 +1,2612 @@
+@font-face {
+  font-family: 'KaushanScript';
+  src: url('./fonts/kaushanscript-regular-webfont.woff');
+}
+
+
+
+body.incorrect_answer
+{
+  animation-name:incorrect_answer;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes incorrect_answer {
+ 0%{
+   background-color: white;
+ }
+
+ 25%{
+   background-color: red;
+ }
+
+ 50%{
+   background-color: white;
+ }
+
+ 75%{
+   background-color: red;
+ }
+
+ 100%{
+   background-color: white;
+ }
+}
+
+body.correct_answer
+{
+  animation-name:correct_answer;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes correct_answer {
+ 0%{
+   background-color: white;
+ }
+
+ 25%{
+   background-color: green;
+ }
+
+ 50%{
+   background-color: white;
+ }
+
+ 75%{
+   background-color: green;
+ }
+
+ 100%{
+   background-color: white;
+ }
+}
+
+
+body.master_answer
+{
+  animation-name:master_answer;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 4;
+}
+
+@keyframes master_answer {
+ 0%{
+   background-color: white;
+ }
+
+ 25%{
+   background-color: green;
+ }
+
+ 50%{
+   background-color: yellow;
+ }
+
+ 75%{
+   background-color: blue;
+ }
+
+ 100%{
+   background-color: white;
+ }
+}
+
+body.game_won
+{
+  animation-name:game_won;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count:2;
+}
+
+@keyframes game_won {
+ 0%{
+   background-color: white;
+ }
+
+ 25%{
+   background-color: green;
+ }
+
+ 50%{
+   background-color: yellow;
+ }
+
+ 75%{
+   background-color: green;
+ }
+
+ 100%{
+   background-color: white;
+ }
+}
+
+
+
+
+/*
+  For Desktops and Laptops
+*/
+
+@media screen and (min-width: 1025px)
+ {
+
+   body
+     {
+       background-color: #04030C;
+       /*EECC8D
+       F08B33*/
+       color:#dfe3e6;
+       padding:4px;
+       font-family: kaushanscript;
+
+     }
+     /* Login Screen  */
+
+     .login_h1
+     {
+       text-align: center;
+       text-shadow: 2px 2px 4px #CAC7D7;
+     }
+
+
+     .login_h3
+     {
+       text-align: center;
+     }
+
+     .login_data_div
+     {
+      text-align: center;
+     }
+
+     .login_button{
+       text-align: center;
+       background-color: #F4ED71;
+       color:#04030C;
+     }
+
+     .login_username_label
+     {
+       margin-right:2px;
+     }
+
+     .login_username_input
+     {
+       margin-right: 2px;
+     }
+
+     #login_image
+     {
+       display: block;
+       margin:0 auto;
+       border:1px solid #F4ED71;
+     }
+
+     /*Welcome Screen*/
+
+     .welcome_a_learn,.welcome_a_start,.welcome_a_stats,.welcome_a_logoff
+     {
+       width:20%;
+       background-color: #f4ED71;
+       color:#04030C;
+     }
+
+     .welcome_ul_div
+     {
+      margin-left: 10%;
+     }
+
+     .welcome_ul
+     {
+       padding: 0;
+       list-style-type: none;
+
+     }
+
+     .welcome_ul li
+     {
+       display: inline;
+     }
+
+     .welcome_header
+     {
+       text-align: center;
+     }
+
+     .welcome_paragraph
+     {
+       width:500px;
+       margin-left: 10%;
+       text-align: left;
+       text-shadow: 2px 2px 4px #CAC7D7;
+     }
+
+     .welcome_paragraph1
+     {
+
+       margin-left: 52%;
+       text-align: left;
+       color:#F4ED71;
+     }
+
+     .welcome_paragraph2
+     {
+
+       margin-left: 10%;
+       text-align: left;
+       text-shadow: 2px 2px 4px #CAC7D7;
+     }
+
+     .welcome_button{
+       position: relative;
+       margin-left: 60%;
+       margin-top:6px;
+       width:30%;
+       background-color: #f4ED71;
+       color: #04030C;
+     }
+
+     /*CheckStats Screen*/
+     .checkstats_username_label
+     {
+       margin-right:30px;
+     }
+
+     .checkstats_gamesplayed_label
+     {
+       margin-right:3px;
+     }
+
+     .checkstats_gameswon_label
+     {
+       margin-right:17px;
+     }
+
+     .checkstats_highestscore_label
+     {
+       margin-right:5px;
+     }
+
+     /*learning Module Screen*/
+     .learning_module_header,.addition_screen_header,.subtraction_screen_header,.multiplication_screen_header,.division_screen_header,.counting_screen_header,.color_screen_header
+     {
+       text-align: center;
+     }
+
+     .color_screen_button,.counting_screen_button,.addition_screen_button,.subtraction_screen_button,.multiplication_screen_button,.division_screen_button,.learning_module_button,.checkstats_button
+     {
+       background-color: #f4ED71;
+       color:#04030C;
+     }
+
+     #learning_module_image,#learning_counting_image
+     {
+       margin-left: 20%;
+       border:1px solid #F4ED71;
+       display: block;
+     }
+
+     #learning_addition_image,#learning_subtraction_image,#learning_multiplication_image,#learning_division_image
+     {
+       margin-left: 35%;
+       border:1px solid #F4ED71;
+       display: block;
+     }
+
+     .learning_module_colors_button,.learning_module_counting_button,.learning_module_addition_button,.learning_module_subtraction_button,.learning_module_multiplication_button,.learning_module_division_button
+     {
+       width:70%;
+       background-color: #F4ED71;
+       color:#04030C;
+       margin-left:16%;
+     }
+
+
+     .red
+     {
+       width:40px;
+       height: 40px;
+       border-radius: 50%;
+       background-color: #FF0800;
+     }
+
+     .green
+     {
+       width:40px;
+       height: 40px;
+       border-radius: 50%;
+       background-color: #7CFC00;
+     }
+
+     .blue
+     {
+       width:40px;
+       height: 40px;
+       border-radius: 50%;
+       background-color:#00BFFF;
+     }
+
+     .yellow
+     {
+       width:40px;
+       height: 40px;
+       border-radius: 50%;
+       background-color: #FFFF00;
+     }
+
+     .pink
+     {
+       width:40px;
+       height: 40px;
+       border-radius: 50%;
+       background-color: #FFC0CB;
+     }
+
+     /*Learn Counting Screen*/
+     .count_ball
+     {
+       width:40px;
+       height: 40px;
+       border-radius: 50%;
+       background-color: red;
+       display: inline-block;
+     }
+
+     .counting_screen_table td
+       {
+         text-align: center;
+       }
+
+
+     /*Addition Screen*/
+
+
+     .symbol,.empty
+     {
+       font-size: 16px;
+       display: inline-block;
+       text-align: center;
+
+     }
+
+     /*Instruction Screen*/
+
+     .instruction_screen_main_div
+     {
+       text-align: center;
+       width:50%;
+       margin: auto;
+       top:50%;
+     }
+
+    .div2_instruction_screen
+    {
+      border:9px solid #CAC7D7;
+      width:45%;
+      margin: auto;
+      padding:10px;
+    }
+
+     .instruction_screen_level_number_area
+     {
+       border:4px solid #CAC7D7;
+       width:300px;
+       height: auto;
+       border-radius:50%;
+       padding:4px;
+       text-align: center;
+       margin: auto;
+       color:#F4ED71;
+       font-size:32px;
+     }
+
+     .instruction_screen_level_type_area
+     {
+       font-size:52px;
+       text-align: center;
+       color:#F4ED71;
+     }
+
+
+     .instruction_screen_level_instruction_area
+     {
+       margin:auto;
+       color:#CAC7D7;
+     }
+
+     .instruction_screen_next_button
+     {
+       background-color:#F4ED71;
+       color:#07000E;
+       background-color: #F4ED71;
+       color:#04030C;
+       width:90%;
+       margin-top: 60px;
+     }
+
+     #instruction_screen_image
+     {
+       margin-left:6%;
+       border:4px solid #F4ED71;
+       border-radius: 50%;
+       margin-bottom: 4px;
+       display: block;
+       width:100px;
+       height: 100px;
+       margin:0 auto;
+     }
+
+     /*Level Screen*/
+
+     /*{
+       width:80%;
+       height: 60%;
+       margin: 10px;
+       background-color:#07000E;
+     }*/
+     /*Level Screen*/
+
+     .level_screen_level
+     {
+       float:left;
+       width: 50%;
+       font-size:24px;
+       padding:5px;
+       box-sizing: border-box;
+     }
+
+     .level_screen_timer
+     {
+       float:right;
+       width:50%;
+       font-size:24px;
+       padding:5px;
+       box-sizing: border-box;
+       text-align: right;
+     }
+
+     .level_screen_level_screen_info
+     {
+       float:left;
+       width:50%;
+       box-sizing: border-box;
+       font-size:24px;
+       padding:6px;
+     }
+
+     .level_screen_timer_div
+     {
+       float:right;
+       width:50%;
+       text-align: right;
+       padding:6px;
+       font-size:24px;
+       box-sizing: border-box;
+     }
+
+
+     .level_screen_next_instruction
+     {
+       width: 40%;
+       margin:auto;
+       font-size:20px;
+       margin-top:auto;
+     }
+
+     .level_screen_level_launch_question_button
+     {
+       position: relative;
+       bottom:20px;
+       background-color:#f4ED71;
+       color:#04030C;
+       font-size:16px;
+       width: 30%;
+
+     }
+
+     .level_screen_level_launch_question_button{
+       display: none;
+     }
+
+     .general_div_ball
+     {
+       width:30px;
+       height:30px;
+       border-radius:50%;
+       position: absolute;
+
+    }
+
+     .level_screen_content
+     {
+       background-color: #07000E;
+     }
+
+     .level_screen_level_launch_question_button
+     {
+       position: absolute;
+       right:140px;
+     }
+
+     /*Question Screen*/
+
+
+     .question_screen_score
+     {
+       float:left;
+       width: 50%;
+       font-size:24px;
+       padding:5px;
+       box-sizing: border-box;
+     }
+
+     .question_screen_attempts
+     {
+       float:left;
+       width:50%;
+       font-size:24px;
+       padding:5px;
+       box-sizing: border-box;
+       text-align: right;
+     }
+
+     .question_screen_timer
+     {
+       text-align: center;
+       font-size: 52px;
+     }
+
+     .question_screen_next_button,.question_screen_restart_button,.question_screen_welcome_button
+     {
+       width:20%;
+       background-color: #f4ED71;
+       color:#04030C;
+       display: none;
+       margin-top:6px;
+     }
+
+     .question_screen_next_button{
+       position: absolute;
+       right:20px;
+     }
+
+     #question_screen_image
+     {
+       margin-left:25%;
+       border:1px solid #F4ED71;
+       border-radius: 50%;
+       display: block;
+       width:100px;
+       height: 100px;
+       margin:0 auto;
+     }
+
+     .bodydiv
+     {
+       border:10px solid #F4ED71;
+       width:25%;
+       margin:auto;
+       padding:10px;
+     }
+
+
+     .question_screen_question_paragraph
+     {
+       padding:14px;
+       text-align: center;
+       font-size:16px;
+     }
+
+     .question_screen_check_button
+     {
+       width:70%;
+       margin-left: 15%;
+       margin-bottom: 10px;
+       background-color: #F4ED71;
+       color:#04030C;
+     }
+
+     .div2_question_screen
+     {
+       text-align: center;
+     }
+
+     .question_screen_answer_textbox
+     {
+       margin-bottom: 10px;
+       width:100%;
+     }
+
+
+ }
+
+
+
+/*
+  For tablets in portrait mode
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  body
+{
+  background-color: #04030C;
+  color:#dfe3e6;
+  padding:4px;
+  font-family: kaushanscript;
+
+}
+/* Login Screen  */
+
+.login_h1
+{
+ text-align: center;
+ text-shadow: 2px 2px 4px #CAC7D7;
+ font-size: 30px;
+}
+
+
+.login_h3
+{
+ text-align: center;
+ font-size: 18px;
+}
+
+.login_username_label,.login_username_input,.login_screen_error_message_paragraph
+{
+  font-size: 18px;
+}
+
+.login_data_div
+{
+ text-align: center;
+}
+
+.login_button
+{
+ text-align: center;
+ background-color: #F4ED71;
+ color:#04030C;
+ /*c3*/
+ font-size: 18px;
+}
+
+ /*c4 missing*/
+#login_image
+{
+  /*c5 image*/
+ display: block;
+ margin:0 auto;
+ width:200px;
+ height: 180px;
+ border:1px solid #F4ED71;
+}
+
+/*Welcome Screen*/
+
+.welcome_a_learn,.welcome_a_start,.welcome_a_stats,.welcome_a_logoff
+{
+  width:20%;
+  font-size: 18px;
+  background-color: #f4ED71;
+  color:#04030C;
+}
+
+.welcome_ul_div
+{
+
+}
+
+.welcome_ul
+{
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.welcome_ul li
+{
+  display: inline;
+}
+
+.welcome_header
+{
+  text-align: center;
+  font-size: 30px;
+}
+
+.welcome_paragraph
+{
+  /*c7*/
+  font-size: 18px;
+  text-align: left;
+  text-shadow: 2px 2px 4px #CAC7D7;
+}
+
+.welcome_paragraph1
+{
+  /*c8*/
+  font-size: 18px;
+  text-align: left;
+  color:#F4ED71;
+}
+
+.welcome_paragraph2
+{
+  /*c9*/
+  font-size: 18px;
+  text-align: left;
+  text-shadow: 2px 2px 4px #CAC7D7;
+}
+
+.welcome_button
+{
+  /*c10*/
+
+  background-color: #f4ED71;
+  color:#04030C;
+  font-size: 18px;
+}
+
+/*CheckStats Screen*/
+.checkstats_username_label
+{
+  /*c11*/
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.learning_module_colors_button,.learning_module_counting_button,.learning_module_addition_button,.learning_module_subtraction_button,.learning_module_multiplication_button,.learning_module_division_button
+{
+  width:70%;
+  background-color: #F4ED71;
+  color:#04030C;
+  display: block;
+  margin:0 auto;
+}
+
+.color_screen_button,.counting_screen_button,.addition_screen_button,.subtraction_screen_button,.multiplication_screen_button,.division_screen_button,.learning_module_button,.checkstats_button
+{
+  background-color: #f4ED71;
+  color:#04030C;
+  font-size:18px;
+}
+
+.checkstats_gamesplayed_label
+{
+  font-size: 12px;/*c12*/
+  margin-right: 13px;
+}
+
+.checkstats_gameswon_label
+{
+  font-size: 12px;/*c13*/
+  margin-right: 21px;
+}
+
+.checkstats_highestscore_label
+{
+  font-size: 12px;/*c14*/
+  margin-right: 12px;
+}
+
+/*learning Module Screen*/
+.learning_module_header,.addition_screen_header,.subtraction_screen_header,.multiplication_screen_header,.division_screen_header,.counting_screen_header,.color_screen_header
+{
+  text-align: center;
+  font-size: 30px;
+}
+
+#learning_module_image,#learning_counting_image
+{
+  border:1px solid #F4ED71;
+  display: block;
+  margin:0 auto;
+}
+
+#learning_addition_image,#learning_subtraction_image,#learning_multiplication_image,#learning_division_image
+{
+  border:1px solid #F4ED71;
+  border-radius: 50%;
+  display: block;
+  margin:0 auto;
+}
+
+.red
+{
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.green
+{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.blue
+{
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:blue;
+}
+
+.yellow
+{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.pink
+{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+td,p
+{
+  font-size: 18px;
+}
+
+/*Learn Counting Screen*/
+.count_ball
+{
+  width:25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+}
+
+.counting_screen_table td
+  {
+    text-align: center;
+  }
+
+  .learning_module_paragraph,.subtraction_screen_paragraph,.addition_screen_paragraph,.division_screen_paragraph,.multiplication_screen_paragraph,.color_screen_paragraph,.counting_screen_paragraph
+  {
+    font-size:18px;
+  }
+
+
+
+/*Addition Screen*/
+
+
+.symbol,.empty
+{
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+
+}
+
+/*Instruction Screen*/
+
+.instruction_screen_main_div
+{
+  text-align: center;
+  font-size: 18px;/*c15*/
+  margin: auto;
+  top:50%;
+}
+
+.div2_instruction_screen
+{
+ border:9px solid #CAC7D7;
+  font-size: 18px;/*c16*/
+ margin: auto;
+ padding:10px;
+ min-height:250px;
+ width:300px;
+}
+
+.instruction_screen_level_number_area
+{
+  border:4px solid #CAC7D7;
+  height: auto;
+  border-radius:50%;
+  padding:4px;
+  text-align: center;
+  margin: auto;
+  color:#F4ED71;
+  font-size:18px;
+}
+
+.instruction_screen_level_type_area
+{
+  font-size:18px;
+  text-align: center;
+  color:#F4ED71;
+}
+
+
+.instruction_screen_level_instruction_area
+{
+  margin:auto;
+  color:#CAC7D7;
+}
+
+.instruction_screen_next_button
+{
+  background-color:#F4ED71;
+  color:#07000E;
+  background-color: #F4ED71;
+  color:#04030C;
+  width:90%;
+  margin-top: 18px;
+  display: block;
+  margin:0 auto;
+}
+
+#instruction_screen_image
+{
+  width:60px;
+  height: 60px;
+  border:4px solid #F4ED71;
+  border-radius: 50%;
+  margin-bottom: 4px;
+  display: block;
+  margin:0 auto;
+}
+
+/*Level Screen*/
+
+/*{
+  width:80%;
+  height: 60%;
+  margin: 10px;
+  background-color:#07000E;
+}*/
+/*Level Screen*/
+
+
+.level_screen_next_instruction
+{
+  font-size: 18px;
+  margin:auto;
+  margin-top:auto;
+}
+
+.level_screen_level_launch_question_button
+{
+  display:none;
+  bottom:20px;
+  background-color: #f4ED71;
+  color:#04030C;
+  font-size:18px;
+
+}
+
+.level_screen_level
+    {
+      float:left;
+      width: 50%;
+      font-size:36px;
+      padding:5px;
+      box-sizing: border-box;
+    }
+
+    .level_screen_timer
+    {
+      float:right;
+      width:50%;
+      font-size:36px;
+      padding:5px;
+      box-sizing: border-box;
+      text-align: right;
+    }
+
+
+
+.general_div_ball
+{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  position: absolute;
+
+}
+
+.level_screen_content
+{
+  background-color: #07000E;
+}
+
+
+
+/*Question Screen*/
+
+
+.question_screen_score
+{
+  float:left;
+  width: 50%;
+  font-size:18px;
+  padding:5px;
+  box-sizing: border-box;
+}
+
+.question_screen_attempts
+{
+  float:left;
+  width:50%;
+  font-size:18px;
+  padding:5px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.question_screen_timer
+{
+  text-align: center;
+  font-size: 40px;
+}
+
+.question_screen_next_button,.question_screen_restart_button,.question_screen_welcome_button
+{
+  font-size:18px;
+  display: none;
+  background-color: #f4ED71;
+  color:#04030C;
+
+}
+
+#question_screen_image
+{
+ width:100px;
+ height:100px;
+ display: block;
+ margin:0 auto;
+ border:1px solid #F4ED71;
+ border-radius: 50%;
+}
+
+.bodydiv
+{
+  border:10px solid #F4ED71;
+  width:70%;
+  margin:auto;
+  padding:18px;
+
+}
+
+
+.question_screen_question_paragraph
+{
+
+  text-align: center;
+  font-size:20px;
+}
+
+.question_screen_check_button
+{
+  width:70%;
+  font-size:14px;
+  margin-bottom: 10px;
+  background-color: #F4ED71;
+  color:#04030C;
+  display: block;
+  margin: 0 auto;
+}
+
+.div2_question_screen
+{
+  text-align: center;
+}
+
+.question_screen_answer_textbox
+{
+  margin-bottom: 10px;
+  width:100%;
+  font-size:14px;
+}
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+{
+  body
+    {
+      background-color: #04030C;
+      /*EECC8D
+      F08B33*/
+      color:#dfe3e6;
+      padding:4px;
+      font-family: kaushanscript;
+
+    }
+    /* Login Screen  */
+
+    .login_h1
+    {
+      text-align: center;
+      text-shadow: 2px 2px 4px #CAC7D7;
+    }
+
+
+    .login_h3
+    {
+      text-align: center;
+    }
+
+    .login_data_div
+    {
+     text-align: center;
+    }
+
+    .login_button{
+      text-align: center;
+      background-color: #F4ED71;
+      color:#04030C;
+    }
+
+    .login_username_label
+    {
+      margin-right:2px;
+    }
+
+    .login_username_input
+    {
+      margin-right: 2px;
+    }
+
+    #login_image
+    {
+      display: block;
+      margin:0 auto;
+      border:1px solid #F4ED71;
+    }
+
+    /*Welcome Screen*/
+
+    .welcome_a_learn,.welcome_a_start,.welcome_a_stats,.welcome_a_logoff
+    {
+      width:20%;
+      background-color: #f4ED71;
+      color:#04030C;
+    }
+
+    .welcome_ul_div
+    {
+     margin-left: 10%;
+    }
+
+    .welcome_ul
+    {
+      padding: 0;
+      list-style-type: none;
+
+    }
+
+    .welcome_ul li
+    {
+      display: inline;
+    }
+
+    .welcome_header
+    {
+      text-align: center;
+    }
+
+    .welcome_paragraph
+    {
+      width:500px;
+      margin-left: 10%;
+      text-align: left;
+      text-shadow: 2px 2px 4px #CAC7D7;
+    }
+
+    .welcome_paragraph1
+    {
+
+      margin-left: 52%;
+      text-align: left;
+      color:#F4ED71;
+    }
+
+    .welcome_paragraph2
+    {
+
+      margin-left: 10%;
+      text-align: left;
+      text-shadow: 2px 2px 4px #CAC7D7;
+    }
+
+    .welcome_button{
+      position: relative;
+      margin-left: 60%;
+      margin-top:6px;
+      width:30%;
+      background-color: #f4ED71;
+      color: #04030C;
+    }
+
+    /*CheckStats Screen*/
+    .checkstats_username_label
+    {
+      margin-right:30px;
+    }
+
+    .checkstats_gamesplayed_label
+    {
+      margin-right:3px;
+    }
+
+    .checkstats_gameswon_label
+    {
+      margin-right:17px;
+    }
+
+    .checkstats_highestscore_label
+    {
+      margin-right:5px;
+    }
+
+    /*learning Module Screen*/
+    .learning_module_header,.addition_screen_header,.subtraction_screen_header,.multiplication_screen_header,.division_screen_header,.counting_screen_header,.color_screen_header
+    {
+      text-align: center;
+    }
+
+    .color_screen_button,.counting_screen_button,.addition_screen_button,.subtraction_screen_button,.multiplication_screen_button,.division_screen_button,.learning_module_button,.checkstats_button
+    {
+      background-color: #f4ED71;
+      color:#04030C;
+    }
+
+    #learning_module_image,#learning_counting_image
+    {
+      border:1px solid #F4ED71;
+      display: block;
+      margin:0 auto;
+    }
+
+    #learning_addition_image,#learning_subtraction_image,#learning_multiplication_image,#learning_division_image
+    {
+      border:1px solid #F4ED71;
+      display: block;
+      margin:0 auto;
+    }
+
+    .learning_module_colors_button,.learning_module_counting_button,.learning_module_addition_button,.learning_module_subtraction_button,.learning_module_multiplication_button,.learning_module_division_button
+    {
+      width:70%;
+      background-color: #F4ED71;
+      color:#04030C;
+      margin-left:16%;
+    }
+
+
+    .red
+    {
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: red;
+    }
+
+    .green
+    {
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: green;
+    }
+
+    .blue
+    {
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color:blue;
+    }
+
+    .yellow
+    {
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: yellow;
+    }
+
+    .pink
+    {
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: pink;
+    }
+
+    /*Learn Counting Screen*/
+    .count_ball
+    {
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: red;
+      display: inline-block;
+    }
+
+    .counting_screen_table td
+      {
+        text-align: center;
+      }
+
+
+    /*Addition Screen*/
+
+
+    .symbol,.empty
+    {
+      font-size: 16px;
+      display: inline-block;
+      text-align: center;
+
+    }
+
+    /*Instruction Screen*/
+
+    .instruction_screen_main_div
+    {
+      text-align: center;
+      width:50%;
+      margin: auto;
+      top:50%;
+    }
+
+   .div2_instruction_screen
+   {
+     border:9px solid #CAC7D7;
+     width:45%;
+     margin: auto;
+     padding:10px;
+   }
+
+    .instruction_screen_level_number_area
+    {
+      border:4px solid #CAC7D7;
+      width:300px;
+      height: auto;
+      border-radius:50%;
+      padding:4px;
+      text-align: center;
+      margin: auto;
+      color:#F4ED71;
+      font-size:32px;
+    }
+
+    .instruction_screen_level_type_area
+    {
+      font-size:52px;
+      text-align: center;
+      color:#F4ED71;
+    }
+
+
+    .instruction_screen_level_instruction_area
+    {
+      margin:auto;
+      color:#CAC7D7;
+    }
+
+    .instruction_screen_next_button
+    {
+      background-color:#F4ED71;
+      color:#07000E;
+      background-color: #F4ED71;
+      color:#04030C;
+      width:90%;
+      margin-top: 60px;
+    }
+
+    #instruction_screen_image
+    {
+      margin-left:6%;
+      border:4px solid #F4ED71;
+      border-radius: 50%;
+      margin-bottom: 4px;
+      display: block;
+      width:100px;
+      height: 100px;
+      margin:0 auto;
+    }
+
+    /*Level Screen*/
+
+    /*{
+      width:80%;
+      height: 60%;
+      margin: 10px;
+      background-color:#07000E;
+    }*/
+    /*Level Screen*/
+
+    .level_screen_level
+    {
+      float:left;
+      width: 50%;
+      font-size:24px;
+      padding:5px;
+      box-sizing: border-box;
+    }
+
+    .level_screen_timer
+    {
+      float:right;
+      width:50%;
+      font-size:24px;
+      padding:5px;
+      box-sizing: border-box;
+      text-align: right;
+    }
+
+    .level_screen_level_screen_info
+    {
+      float:left;
+      width:50%;
+      box-sizing: border-box;
+      font-size:24px;
+      padding:6px;
+    }
+
+    .level_screen_timer_div
+    {
+      float:right;
+      width:50%;
+      text-align: right;
+      padding:6px;
+      font-size:24px;
+      box-sizing: border-box;
+    }
+
+
+    .level_screen_next_instruction
+    {
+      width: 40%;
+      margin:auto;
+      font-size:20px;
+      margin-top:auto;
+    }
+
+    .level_screen_level_launch_question_button
+    {
+      position: relative;
+      bottom:20px;
+      background-color:#f4ED71;
+      color:#04030C;
+      font-size:16px;
+      width: 30%;
+
+    }
+
+    .level_screen_level_launch_question_button{
+      display: none;
+    }
+
+    .general_div_ball
+    {
+      width:30px;
+      height:30px;
+      border-radius:50%;
+      position: absolute;
+
+   }
+
+    .level_screen_content
+    {
+      background-color: #07000E;
+    }
+
+    .level_screen_level_launch_question_button
+    {
+      position: absolute;
+      right:140px;
+    }
+
+    /*Question Screen*/
+
+
+    .question_screen_score
+    {
+      float:left;
+      width: 50%;
+      font-size:24px;
+      padding:5px;
+      box-sizing: border-box;
+    }
+
+    .question_screen_attempts
+    {
+      float:left;
+      width:50%;
+      font-size:24px;
+      padding:5px;
+      box-sizing: border-box;
+      text-align: right;
+    }
+
+    .question_screen_timer
+    {
+      text-align: center;
+      font-size: 52px;
+    }
+
+    .question_screen_next_button,.question_screen_restart_button,.question_screen_welcome_button
+    {
+      width:20%;
+      background-color: #f4ED71;
+      color:#04030C;
+      display: none;
+      margin-top:6px;
+    }
+
+    .question_screen_next_button{
+      position: absolute;
+      right:20px;
+    }
+
+    #question_screen_image
+    {
+      margin-left:25%;
+      border:1px solid #F4ED71;
+      border-radius: 50%;
+      display: block;
+      width:100px;
+      height: 100px;
+      margin:0 auto;
+    }
+
+    .bodydiv
+    {
+      border:10px solid #F4ED71;
+      width:25%;
+      margin:auto;
+      padding:10px;
+    }
+
+
+    .question_screen_question_paragraph
+    {
+      padding:14px;
+      text-align: center;
+      font-size:16px;
+    }
+
+    .question_screen_check_button
+    {
+      width:70%;
+      margin-left: 15%;
+      margin-bottom: 10px;
+      background-color: #F4ED71;
+      color:#04030C;
+    }
+
+    .div2_question_screen
+    {
+      text-align: center;
+    }
+
+    .question_screen_answer_textbox
+    {
+      margin-bottom: 10px;
+      width:100%;
+    }
+
+}
+
+
+
+
+/*
+  Other middle values
+*/
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+  body
+{
+  background-color: #04030C;
+  color:#dfe3e6;
+  padding:4px;
+  font-family: kaushanscript;
+
+}
+/* Login Screen  */
+
+.login_h1
+{
+ text-align: center;
+ text-shadow: 2px 2px 4px #CAC7D7;
+ font-size: 25px;
+}
+
+
+.login_h3
+{
+ text-align: center;
+ font-size: 15px;
+}
+
+.login_username_label,.login_username_input,.login_screen_error_message_paragraph
+{
+  font-size: 15px;
+}
+
+.login_data_div
+{
+ text-align: center;
+}
+
+.login_button
+{
+ text-align: center;
+ background-color: #F4ED71;
+ color:#04030C;
+ /*c3*/
+ font-size: 15px;
+}
+
+ /*c4 missing*/
+#login_image
+{
+  /*c5 image*/
+ display: block;
+ margin:0 auto;
+ width:200px;
+ height: 180px;
+ border:1px solid #F4ED71;
+}
+
+/*Welcome Screen*/
+
+.welcome_a_learn,.welcome_a_start,.welcome_a_stats,.welcome_a_logoff
+{
+  width:20%;
+  font-size: 12px;
+  background-color: #f4ED71;
+  color:#04030C;
+}
+
+.welcome_ul_div
+{
+
+}
+
+.welcome_ul
+{
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.welcome_ul li
+{
+  display: inline;
+}
+
+.welcome_header
+{
+  text-align: center;
+  font-size: 25px;
+}
+
+.welcome_paragraph
+{
+  /*c7*/
+  font-size: 15px;
+  text-align: left;
+  text-shadow: 2px 2px 4px #CAC7D7;
+}
+
+.welcome_paragraph1
+{
+  /*c8*/
+  font-size: 15px;
+  text-align: left;
+  color:#F4ED71;
+}
+
+.welcome_paragraph2
+{
+  /*c9*/
+  font-size: 15px;
+  text-align: left;
+  text-shadow: 2px 2px 4px #CAC7D7;
+}
+
+.welcome_button
+{
+  /*c10*/
+
+  background-color: #f4ED71;
+  color:#04030C;
+  font-size: 10px;
+}
+
+/*CheckStats Screen*/
+.checkstats_username_label
+{
+  /*c11*/
+  font-size: 12px;
+  margin-right: 30px;
+}
+
+.learning_module_colors_button,.learning_module_counting_button,.learning_module_addition_button,.learning_module_subtraction_button,.learning_module_multiplication_button,.learning_module_division_button
+{
+  width:70%;
+  background-color: #F4ED71;
+  color:#04030C;
+  display: block;
+  margin:0 auto;
+}
+
+.color_screen_button,.counting_screen_button,.addition_screen_button,.subtraction_screen_button,.multiplication_screen_button,.division_screen_button,.learning_module_button,.checkstats_button
+{
+  background-color: #f4ED71;
+  color:#04030C;
+  font-size:15px;
+}
+
+.checkstats_gamesplayed_label
+{
+  font-size: 12px;/*c12*/
+  margin-right: 13px;
+}
+
+.checkstats_gameswon_label
+{
+  font-size: 12px;/*c13*/
+  margin-right: 21px;
+}
+
+.checkstats_highestscore_label
+{
+  font-size: 12px;/*c14*/
+  margin-right: 12px;
+}
+
+/*learning Module Screen*/
+.learning_module_header,.addition_screen_header,.subtraction_screen_header,.multiplication_screen_header,.division_screen_header,.counting_screen_header,.color_screen_header
+{
+  text-align: center;
+  font-size: 20px;
+}
+
+#learning_module_image,#learning_counting_image
+{
+  border:1px solid #F4ED71;
+  display: block;
+  width:300px;
+  height: 280px;
+  margin:0 auto;
+}
+
+#learning_addition_image,#learning_subtraction_image,#learning_multiplication_image,#learning_division_image
+{
+  border:1px solid #F4ED71;
+  border-radius: 50%;
+  display: block;
+  margin:0 auto;
+  width:200px;
+  height: 200px;
+}
+
+.red
+{
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.green
+{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.blue
+{
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color:blue;
+}
+
+.yellow
+{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.pink
+{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+td,p
+{
+  font-size: 15px;
+}
+
+/*Learn Counting Screen*/
+.count_ball
+{
+  width:15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+}
+
+.counting_screen_table td
+  {
+    text-align: center;
+  }
+
+  .learning_module_paragraph,.subtraction_screen_paragraph,.addition_screen_paragraph,.division_screen_paragraph,.multiplication_screen_paragraph,.color_screen_paragraph,.counting_screen_paragraph
+  {
+    font-size:15px;
+  }
+
+
+
+/*Addition Screen*/
+
+
+.symbol,.empty
+{
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+
+}
+
+/*Instruction Screen*/
+
+.instruction_screen_main_div
+{
+  text-align: center;
+  font-size: 15px;/*c15*/
+  margin: auto;
+  top:50%;
+}
+
+.div2_instruction_screen
+{
+ border:9px solid #CAC7D7;
+  font-size: 15px;/*c16*/
+ margin: auto;
+ padding:10px;
+ min-height:200px;
+ width:100px;
+}
+
+.instruction_screen_level_number_area
+{
+  border:4px solid #CAC7D7;
+  height: auto;
+  border-radius:50%;
+  padding:4px;
+  text-align: center;
+  margin: auto;
+  color:#F4ED71;
+  font-size:10px;
+}
+
+.instruction_screen_level_type_area
+{
+  font-size:15px;
+  text-align: center;
+  color:#F4ED71;
+}
+
+
+.instruction_screen_level_instruction_area
+{
+  margin:auto;
+  color:#CAC7D7;
+}
+
+.instruction_screen_next_button
+{
+  background-color:#F4ED71;
+  color:#07000E;
+  background-color: #F4ED71;
+  color:#04030C;
+  width:90%;
+  margin-top: 10px;
+  display: block;
+  margin:0 auto;
+}
+
+#instruction_screen_image
+{
+  width:60px;
+  height: 60px;
+  border:4px solid #F4ED71;
+  border-radius: 50%;
+  margin-bottom: 4px;
+  display: block;
+  margin:0 auto;
+}
+
+/*Level Screen*/
+
+/*{
+  width:80%;
+  height: 60%;
+  margin: 10px;
+  background-color:#07000E;
+}*/
+/*Level Screen*/
+
+
+.level_screen_next_instruction
+{
+  font-size: 15px;
+  margin:auto;
+  margin-top:auto;
+}
+
+.level_screen_level_launch_question_button
+{
+  display:none;
+  bottom:12px;
+  background-color: #f4ED71;
+  color:#04030C;
+  font-size:12px;
+
+}
+
+.level_screen_level
+    {
+      float:left;
+      width: 50%;
+      font-size:30px;
+      padding:5px;
+      box-sizing: border-box;
+    }
+
+    .level_screen_timer
+    {
+      float:right;
+      width:50%;
+      font-size:32px;
+      padding:5px;
+      box-sizing: border-box;
+      text-align: right;
+    }
+
+
+
+.general_div_ball
+{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  position: absolute;
+
+}
+
+.level_screen_content
+{
+  background-color: #07000E;
+}
+
+
+
+/*Question Screen*/
+
+
+.question_screen_score
+{
+  float:left;
+  width: 50%;
+  font-size:15px;
+  padding:5px;
+  box-sizing: border-box;
+}
+
+.question_screen_attempts
+{
+  float:left;
+  width:50%;
+  font-size:15px;
+  padding:5px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.question_screen_timer
+{
+  text-align: center;
+  font-size: 32px;
+}
+
+.question_screen_next_button,.question_screen_restart_button,.question_screen_welcome_button
+{
+  font-size:15px;
+  display: none;
+  background-color: #f4ED71;
+  color:#04030C;
+
+}
+
+#question_screen_image
+{
+ width:60px;
+ height: 60px;
+ display: block;
+ margin:0 auto;
+ border:1px solid #F4ED71;
+ border-radius: 50%;
+}
+
+.bodydiv
+{
+  border:10px solid #F4ED71;
+  width:50%;
+  margin:auto;
+  padding:10px;
+
+}
+
+
+.question_screen_question_paragraph
+{
+
+  text-align: center;
+  font-size:20px;
+}
+
+.question_screen_check_button
+{
+  width:70%;
+  font-size:15px;
+  margin-bottom: 10px;
+  background-color: #F4ED71;
+  color:#04030C;
+  display: block;
+  margin: 0 auto;
+}
+
+.div2_question_screen
+{
+  text-align: center;
+}
+
+.question_screen_answer_textbox
+{
+  margin-bottom: 15px;
+  width:100%;
+  font-size:10px;
+}
+
+
+
+
+
+}
+
+
+/*Most of the Smartphones*/
+
+ @media screen and (max-width: 480px) {
+
+  body
+{
+  background-color: #04030C;
+  color:#dfe3e6;
+  padding:4px;
+  font-family: kaushanscript;
+
+}
+/* Login Screen  */
+
+.login_h1
+{
+ text-align: center;
+ text-shadow: 2px 2px 4px #CAC7D7;
+ font-size: 20px;
+}
+
+
+.login_h3
+{
+ text-align: center;
+ font-size: 10px;
+}
+
+.login_username_label,.login_username_input,.login_screen_error_message_paragraph
+{
+  font-size: 10px;
+}
+
+.login_data_div
+{
+ text-align: center;
+}
+
+.login_button
+{
+ text-align: center;
+ background-color: #F4ED71;
+ color:#04030C;
+ /*c3*/
+ font-size: 10px;
+}
+
+ /*c4 missing*/
+#login_image
+{
+  /*c5 image*/
+ display: block;
+ margin:0 auto;
+ width:200px;
+ height: 180px;
+ border:1px solid #F4ED71;
+}
+
+/*Welcome Screen*/
+
+.welcome_a_learn,.welcome_a_start,.welcome_a_stats,.welcome_a_logoff
+{
+  width:20%;
+  font-size: 10px;
+  background-color: #f4ED71;
+  color:#04030C;
+}
+
+.welcome_ul_div
+{
+
+}
+
+.welcome_ul
+{
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.welcome_ul li
+{
+  display: inline;
+}
+
+.welcome_header
+{
+  text-align: center;
+  font-size: 14px;
+}
+
+.welcome_paragraph
+{
+  /*c7*/
+  font-size: 10px;
+  text-align: left;
+  text-shadow: 2px 2px 4px #CAC7D7;
+}
+
+.welcome_paragraph1
+{
+  /*c8*/
+  font-size: 10px;
+  text-align: left;
+  color:#F4ED71;
+}
+
+.welcome_paragraph2
+{
+  /*c9*/
+  font-size: 10px;
+  text-align: left;
+  text-shadow: 2px 2px 4px #CAC7D7;
+}
+
+.welcome_button
+{
+  /*c10*/
+
+  background-color: #f4ED71;
+  color:#04030C;
+  font-size: 10px;
+}
+
+/*CheckStats Screen*/
+.checkstats_username_label
+{
+  /*c11*/
+  font-size: 12px;
+  margin-right: 30px;
+}
+
+.learning_module_colors_button,.learning_module_counting_button,.learning_module_addition_button,.learning_module_subtraction_button,.learning_module_multiplication_button,.learning_module_division_button
+{
+  width:70%;
+  background-color: #F4ED71;
+  color:#04030C;
+  display: block;
+  margin:0 auto;
+}
+
+.color_screen_button,.counting_screen_button,.addition_screen_button,.subtraction_screen_button,.multiplication_screen_button,.division_screen_button,.learning_module_button,.checkstats_button
+{
+  background-color: #f4ED71;
+  color:#04030C;
+  font-size:10px;
+}
+
+.checkstats_gamesplayed_label
+{
+  font-size: 12px;/*c12*/
+  margin-right: 13px;
+}
+
+.checkstats_gameswon_label
+{
+  font-size: 12px;/*c13*/
+  margin-right: 21px;
+}
+
+.checkstats_highestscore_label
+{
+  font-size: 12px;/*c14*/
+  margin-right: 12px;
+}
+
+/*learning Module Screen*/
+.learning_module_header,.addition_screen_header,.subtraction_screen_header,.multiplication_screen_header,.division_screen_header,.counting_screen_header,.color_screen_header
+{
+  text-align: center;
+  font-size: 10px;
+}
+
+#learning_module_image,#learning_counting_image
+{
+  border:1px solid #F4ED71;
+  display: block;
+  margin:0 auto;
+}
+
+#learning_addition_image,#learning_subtraction_image,#learning_multiplication_image,#learning_division_image
+{
+  border:1px solid #F4ED71;
+  border-radius: 50%;
+  display: block;
+  margin:0 auto;
+}
+
+.red
+{
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.green
+{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.blue
+{
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color:blue;
+}
+
+.yellow
+{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.pink
+{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+td,p
+{
+  font-size: 12px;
+}
+
+/*Learn Counting Screen*/
+.count_ball
+{
+  width:15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+}
+
+.counting_screen_table td
+  {
+    text-align: center;
+  }
+
+  .learning_module_paragraph,.subtraction_screen_paragraph,.addition_screen_paragraph,.division_screen_paragraph,.multiplication_screen_paragraph,.color_screen_paragraph,.counting_screen_paragraph
+  {
+    font-size:12px;
+  }
+
+
+
+/*Addition Screen*/
+
+
+.symbol,.empty
+{
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+
+}
+
+/*Instruction Screen*/
+
+.instruction_screen_main_div
+{
+  text-align: center;
+  font-size: 10px;/*c15*/
+  margin: auto;
+  top:50%;
+}
+
+.div2_instruction_screen
+{
+ border:9px solid #CAC7D7;
+  font-size: 10px;/*c16*/
+ margin: auto;
+ padding:10px;
+ min-height:200px;
+ width:100px;
+}
+
+.instruction_screen_level_number_area
+{
+  border:4px solid #CAC7D7;
+  height: auto;
+  border-radius:50%;
+  padding:4px;
+  text-align: center;
+  margin: auto;
+  color:#F4ED71;
+  font-size:10px;
+}
+
+.instruction_screen_level_type_area
+{
+  font-size:12px;
+  text-align: center;
+  color:#F4ED71;
+}
+
+
+.instruction_screen_level_instruction_area
+{
+  margin:auto;
+  color:#CAC7D7;
+}
+
+.instruction_screen_next_button
+{
+  background-color:#F4ED71;
+  color:#07000E;
+  background-color: #F4ED71;
+  color:#04030C;
+  width:90%;
+  margin-top: 10px;
+  display: block;
+  margin:0 auto;
+}
+
+#instruction_screen_image
+{
+  width:60px;
+  height: 60px;
+  border:4px solid #F4ED71;
+  border-radius: 50%;
+  margin-bottom: 4px;
+  display: block;
+  margin:0 auto;
+}
+
+/*Level Screen*/
+
+/*{
+  width:80%;
+  height: 60%;
+  margin: 10px;
+  background-color:#07000E;
+}*/
+/*Level Screen*/
+
+
+.level_screen_next_instruction
+{
+  font-size: 10px;
+  margin:auto;
+  margin-top:auto;
+}
+
+.level_screen_level_launch_question_button
+{
+  display:none;
+  bottom:20px;
+  background-color: #f4ED71;
+  color:#04030C;
+  font-size:12px;
+
+}
+
+.level_screen_level
+    {
+      float:left;
+      width: 50%;
+      font-size:24px;
+      padding:5px;
+      box-sizing: border-box;
+    }
+
+    .level_screen_timer
+    {
+      float:right;
+      width:50%;
+      font-size:24px;
+      padding:5px;
+      box-sizing: border-box;
+      text-align: right;
+    }
+
+
+
+.general_div_ball
+{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  position: absolute;
+
+}
+
+.level_screen_content
+{
+  background-color: #07000E;
+}
+
+
+
+/*Question Screen*/
+
+
+.question_screen_score
+{
+  float:left;
+  width: 50%;
+  font-size:10px;
+  padding:5px;
+  box-sizing: border-box;
+}
+
+.question_screen_attempts
+{
+  float:left;
+  width:50%;
+  font-size:10px;
+  padding:5px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.question_screen_timer
+{
+  text-align: center;
+  font-size: 26px;
+}
+
+.question_screen_next_button,.question_screen_restart_button,.question_screen_welcome_button
+{
+  font-size:12px;
+  display: none;
+  background-color: #f4ED71;
+  color:#04030C;
+
+}
+
+#question_screen_image
+{
+ width:60px;
+ height: 60px;
+ display: block;
+ margin:0 auto;
+ border:1px solid #F4ED71;
+ border-radius: 50%;
+}
+
+.bodydiv
+{
+  border:10px solid #F4ED71;
+  width:70%;
+  margin:auto;
+  padding:10px;
+
+}
+
+
+.question_screen_question_paragraph
+{
+
+  text-align: center;
+  font-size:16px;
+}
+
+.question_screen_check_button
+{
+  width:70%;
+  font-size:10px;
+  margin-bottom: 10px;
+  background-color: #F4ED71;
+  color:#04030C;
+  display: block;
+  margin: 0 auto;
+}
+
+.div2_question_screen
+{
+  text-align: center;
+}
+
+.question_screen_answer_textbox
+{
+  margin-bottom: 10px;
+  width:100%;
+  font-size:10px;
+}
+
+
+
+
+
+
+}
